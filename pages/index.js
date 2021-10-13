@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-// import CloudAssets from "../components/CloudAssets";
+import CloudAssets from "../components/CloudAssets";
 import { Typography } from "@progress/kendo-react-common";
 
 export async function getStaticProps(context) {
@@ -45,7 +45,7 @@ export default function Home({ resData }) {
           repudiandae officia totam amet corporis illum <br /> minus fugit
           incidunt magnam deserunt veniam dignissimos.
         </Typography.p>
-        {/* <CloudAssets data={resData} /> */}
+        <CloudAssets data={resData} />
       </main>
     </div>
   );
