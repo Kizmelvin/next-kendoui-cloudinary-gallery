@@ -17,7 +17,7 @@ function Modal({ baseUrl, data, setIsOpen }) {
     setIsOpen(false);
   };
   return (
-    <Dialog onClose={closeDialog}>
+    <Dialog onClose={closeDialog} width={620} height={720}>
       <Card>
         <CardHeader
           style={{
@@ -44,8 +44,8 @@ function Modal({ baseUrl, data, setIsOpen }) {
           <img
             src={`${baseUrl}/${type}/v${version}/${public_id}.${format}`}
             alt="dialog image"
-            width="800px"
-            height="550px"
+            width="550"
+            height="450"
           />
         </CardBody>
       </Card>
