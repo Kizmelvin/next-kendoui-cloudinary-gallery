@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@progress/kendo-react-buttons";
 import { Dialog, DialogActionsBar } from "@progress/kendo-react-dialogs";
 import { Typography } from "@progress/kendo-react-common";
@@ -27,7 +26,7 @@ function Modal({ baseUrl, data, setIsOpen }) {
           }}
         >
           <Avatar type="icon" size="medium" shape="circle">
-            <Image
+            <img
               src={`${baseUrl}/${type}/v${version}/${public_id}.${format}`}
               alt="dialog avatar"
               width="45px"
@@ -42,7 +41,7 @@ function Modal({ baseUrl, data, setIsOpen }) {
           </CardActions>
         </CardHeader>
         <CardBody>
-          <Image
+          <img
             src={`${baseUrl}/${type}/v${version}/${public_id}.${format}`}
             alt="dialog image"
             width="800px"

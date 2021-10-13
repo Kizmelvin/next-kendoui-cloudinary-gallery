@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Modal from "./Modal";
 import {
   Card,
   CardHeader,
+  CardImage,
   CardTitle,
   CardBody,
   Avatar,
@@ -33,7 +33,7 @@ const CloudAssets = ({ data }) => {
                 <Card>
                   <CardHeader className="k-hbox">
                     <Avatar type="icon" size="small" shape="circle">
-                      <Image
+                      <img
                         src="https://a.storyblok.com/f/51376/x/da286b5766/cloudinary.svg"
                         alt="avatar"
                         width="45px"
@@ -49,7 +49,7 @@ const CloudAssets = ({ data }) => {
                     </CardTitle>
                   </CardHeader>
                   <CardBody>
-                    <Image
+                    <CardImage
                       src={`${baseUrl}/${type}/v${version}/${public_id}.${format}`}
                       alt="first from cloud.."
                       width="420px"
