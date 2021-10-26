@@ -9,6 +9,7 @@ import {
   CardBody,
   Avatar,
 } from "@progress/kendo-react-layout";
+
 const CloudAssets = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
@@ -67,5 +68,4 @@ const CloudAssets = ({ data }) => {
     </>
   );
 };
-
 export default CloudAssets;

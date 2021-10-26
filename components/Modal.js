@@ -65,7 +65,9 @@ function Modal({ baseUrl, data, setIsOpen }) {
         <Typography.h3 margin={"xlarge"}>
           Credits:{" "}
           <span>
-            <a href="https://unsplash.com/">Unsplash</a>
+            <a href="https://unsplash.com/" target="_blank" rel="noreferrer">
+              Unsplash
+            </a>
           </span>
         </Typography.h3>
       </DialogActionsBar>
